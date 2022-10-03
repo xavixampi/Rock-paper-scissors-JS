@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    body{
+        height:100vh;
+        background: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width:500px;
+        height:200px;
+        background: blue;
+        display: flex;
+        flex-direction: column;
+    }
+    .result{
+        height: 30%;
+        background: purple;
+        display: flex;align-items: center;justify-content: center;
+    }
+    .buttons-section{
+        height:70%;
+        width:100%;
+        background: red;
+        display: flex;
+    }
+    .player{
+        width:50%;
+        height: 100%;
+        background:green;
+        display: flex;justify-content: center;align-items: center;
+    }
+    .bot{
+        width:50%;
+        height:100%;
+        background: red;
+        display: flex;justify-content: center;align-items: center;
+    }
+    button,.bot-answer{
+        width:30%;
+        height:90%;
+        background: white;
+        display: flex;justify-content: center;align-items: center;
+        font-size: 50px;
+    }
+
+    .css_selected{
+        background: #666;
+        color:white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="result">
+            <h2 class="result-input">Select your character</h2>
+        </div>
+        <div class="buttons-section">
+            <div class="player">
+                <button id="rock">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                </button>
+                <button id="paper">
+                    <i class="fa-regular fa-hand"></i>
+                </button>
+                <button id="scissors">
+                    <i class="fa-regular fa-hand-scissors"></i>
+                </button>
+            </div>
+    
+            <div class="bot">
+                <div class="bot-answer">
+                    <i id="answer"class="fa-regular"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
